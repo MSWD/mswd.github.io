@@ -101,10 +101,10 @@ body {
 }
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 420px) {
   .top {
     background: url('../image/logo1.png') no-repeat;
-    background-size: 900px;
+    background-size: 800px;
     background-position-x: center;
     background-color: darkgrey ;
     min-height: 200px;
@@ -112,6 +112,11 @@ body {
     font-family: 'Bowlby One SC';
     overflow: hidden;
     padding-bottom: 0px;
+  }
+
+  .content-centered {
+    width: 930px !important;
+    margin: 0 auto;
   }
 
   #logo {
