@@ -1,0 +1,101 @@
+body {
+  font-family: 'Indie Flower';
+}
+
+#logo {
+  float: left;
+  background: url('../image/logo_sm1.png');
+  z-index: -1;
+  width: 200px;
+  height: 70px;
+  margin-left: 2em;
+}
+
+.content-centered {
+  width: 1000px;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.top {
+  background: url('../image/background_full.jpg') no-repeat;
+  background-size: 1034px;
+  background-position-y: -350px;
+  /* opacity: .65; */
+  min-height: 400px;
+  border: 1px solid gray;
+  font-family: 'Bowlby One SC';
+  overflow: hidden;
+  padding-bottom: 0px;
+}
+
+#logo-links {
+  margin-top: 17.5em;
+  margin-bottom: 0px;
+  margin-left: 8em;
+  margin-right: 8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  min-height: 1em;
+  opacity: .8 ;
+  background: lightgrey;
+  vertical-align: sub;
+  color: white;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: darkgrey;
+}
+
+.top h1 {
+  margin-top: 1.2em;
+  text-align: right;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.center-row {
+  border: 1px solid lightgray;
+  text-align: center
+}
+
+.event-box-table {
+  width: 1034px;
+  margin: 0 auto;
+  display: table;
+}
+.event-box-row {
+  border: 1px lightcyan;
+  /* display: table-row; */
+  overflow: auto;
+}
+
+.event-box-row::after {
+  clear: both;
+}
+
+.event-box {
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  min-height: 200px;
+  /* display: table-cell; */
+  float: left;
+  width: 332px;
+  border-spacing: 1em;
+  margin-right: 1em;
+}
+
+.left {
+}
+
+.last {
+  margin-right: 0;
+}
+
+.middle {
+}
+
+.clear {
+  clear: both;
+}
