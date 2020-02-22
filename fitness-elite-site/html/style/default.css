@@ -1,152 +1,174 @@
 body {
   font-family: 'Indie Flower';
+  font-size: 2em;
 }
 
-#logo {
-  float: left;
-  background: url('../image/logo_sm1.png');
-  z-index: -1;
-  width: 200px;
-  height: 70px;
-  margin-left: 2em;
-}
-
-.content-centered {
-  width: 1000px;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 1em;
-  margin-bottom: 1em;
-}
 
 .top {
-  background: url('../image/background_full.jpg') no-repeat;
-  background-size: 1034px;
-  background-position-y: -350px;
-  /* opacity: .65; */
-  min-height: 400px;
+  background: url('../image/logo1.png') no-repeat;
+  background-size: 800px;
+  background-position-x: center;
+  background-color: darkgrey ;
+  min-height: 200px;
   border: 1px solid gray;
   font-family: 'Bowlby One SC';
   overflow: hidden;
   padding-bottom: 0px;
 }
 
-#logo-links {
-  margin-top: 17.5em;
-  margin-bottom: 0px;
-  margin-left: 8em;
-  margin-right: 8em;
-  padding-left: 1em;
-  padding-right: 1em;
-  min-height: 1em;
-  opacity: .8 ;
-  background: lightgrey;
-  vertical-align: sub;
-  color: white;
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: darkgrey;
+.content-centered, .event-box, footer {
+  width: 930px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.content-centered, .event-box {
+  border: 1px solid lightgray;
+  padding: .25em;
+}
+
+#logo {
+  background: none;
 }
 
 .top h1 {
-  margin-top: 1.2em;
+  margin-top: 5em;
+  margin-right: 1.5em;
   text-align: right;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
+#logo-links {
+  content: "";
+  display: none;
+}
+
 .center-row {
   border: 1px solid lightgray;
-  text-align: center
-}
-
-.event-box-table {
-  width: 1034px;
-  margin: 0 auto;
-  display: table;
-}
-.event-box-row {
-  border: 1px lightcyan;
-  /* display: table-row; */
-  overflow: auto;
-}
-
-.event-box-row::after {
-  clear: both;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: .5em;
+  min-height: 50px;
 }
 
 .event-box {
-  border-radius: 15px;
-  border: 1px solid lightgray;
   min-height: 200px;
-  /* display: table-cell; */
-  float: left;
-  width: 332px;
-  border-spacing: 1em;
-  margin-right: 1em;
+  margin-bottom: .6em;
 }
 
-.left {
+.event-box-table {
+  width: 100%;
+  margin: 0 auto;
+  display: table;
 }
 
-.last {
-  margin-right: 0;
+.event-box-row {
+  overflow: auto;
 }
 
-.middle {
+.bottom {
+  min-height: 2em;
 }
 
-.clear {
-  clear: both;
+footer {
+  margin: 0 auto;
+  font-size: .7em;
+  font-weight: lighter;
 }
 
+@media only screen and (min-width: 768px) {
+  
+  body {
+    font-size: 1em;
+  }
+    #logo {
+    float: left;
+    background: url('../image/logo_sm1.png');
+    z-index: -1;
+    width: 200px;
+    height: 70px;
+    margin-top: 1em;
+    margin-left: 2.8em;
+  }
 
-@media only screen and (max-width: 420px) {
+  .content-centered {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+
+  .content-centered, .event-box {
+    border-radius: 15px;
+  }
+
   .top {
-    background: url('../image/logo1.png') no-repeat;
-    background-size: 800px;
-    background-position-x: center;
-    background-color: darkgrey ;
-    min-height: 200px;
+    background: url('../image/background_full.jpg') no-repeat;
+    background-size: 1034px;
+    background-position-y: -350px;
+    /* opacity: .65; */
+    min-height: 400px;
     border: 1px solid gray;
     font-family: 'Bowlby One SC';
     overflow: hidden;
     padding-bottom: 0px;
   }
 
-  .content-centered {
-    width: 930px !important;
-    margin: 0 auto;
-  }
-
-  #logo {
-    background: none !important;
+  #logo-links {
+    margin-top: 17.5em;
+    margin-bottom: 0px;
+    margin-left: 8em;
+    margin-right: 8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    min-height: 1em;
+    opacity: .8 ;
+    background: lightgrey;
+    vertical-align: sub;
+    color: white;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: darkgrey;
+    display: auto;
   }
 
   .top h1 {
-    margin-top: 12em;
+    margin-top: 1.2em;
+    margin-right: none;
     text-align: right;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
-  
-  #logo-links {
-    content: "";
-    display: none;
-  }
 
   .center-row {
     border: 1px solid lightgray;
-    font-size: 3em;
     text-align: center;
+    margin-top: none;
+    font-size: 1em;
+  }
+
+  .event-box-table, footer {
+    width: 1000px;
   }
 
   .event-box {
-    margin: 0 auto;
-    width: 100%;
-    float: none !important;
-    margin-bottom: .6em;
+    float: left;
+    width: 316px;
+    margin-right: 1em;
+  }
+
+  .last {
+    margin-right: 0;
   }
   
+  .clear {
+    clear: both;
+  }
+
+  .event-box-row::after {
+    clear: both;
+  }
+
 }
