@@ -73,10 +73,15 @@ body {
   min-height: 2em;
 }
 
+.about-text {
+  font-family: 'Jockey One';  
+}
+
 footer {
   margin: 0 auto;
   font-size: .7em;
   font-weight: lighter;
+  font-family: 'Jockey One';
 }
 
 @media only screen and (min-width: 768px) {
