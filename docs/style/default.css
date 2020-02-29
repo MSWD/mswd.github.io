@@ -64,8 +64,9 @@ h3 {
 
 
 .event-box {
-  min-height: 200px;
+  min-height: 220px;
   margin-bottom: .6em;
+  padding: .5em
 }
 
 .event-box-table {
@@ -110,11 +111,11 @@ footer {
   }
 
   .cell-33 {
-    width: 316px;
+    width: 308px;
   }
 
   .cell-50 {
-    width: 487px;
+    width: 479px;
   }
 
   .cell-100 {
@@ -152,9 +153,8 @@ footer {
     padding-left: 1em;
     padding-right: 1em;
     min-height: 1em;
-    opacity: .8 ;
+    opacity: .85 ;
     background: lightgrey;
-    vertical-align: sub;
     color: white;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: darkgrey;
@@ -178,7 +178,7 @@ footer {
   }
 
   .event-box-table, footer {
-    width: 1000px;
+    width: 1010px;
   }
 
   .event-box {
