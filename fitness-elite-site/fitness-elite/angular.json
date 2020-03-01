@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fitness-elite",
+            "outputPath": "../../docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -36,6 +36,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "deployUrl": "docs/",
+              "baseHref": "/docs",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
