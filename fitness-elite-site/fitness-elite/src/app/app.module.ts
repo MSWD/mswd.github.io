@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TitleHeadingComponent } from '../components/title-heading/title-heading.component';
-import { AlertBarComponent } from '../components/alert-bar/alert-bar.component';
+import { IndexModuleModule } from '../modules/index-module/index-module.module';
+import { GroupsModuleModule } from '../modules/groups-module/groups-module.module';
 
 @NgModule({
    declarations: [
-      AppComponent,
-      TitleHeadingComponent,
-      AlertBarComponent
+      AppComponent
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      IndexModuleModule,
+      GroupsModuleModule
    ],
    providers: [],
    bootstrap: [
