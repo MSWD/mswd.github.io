@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TitleHeadingComponent } from '../../components/title-heading/title-heading.component';
-import { AlertBarComponent } from '../../components/alert-bar/alert-bar.component';
 
 @Component({
   selector: 'index-view',
