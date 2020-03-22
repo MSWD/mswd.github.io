@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Indie+Flower|Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Indie+Flower|Jockey+One|Francois+One&display=swap');
 
 body {
   font-family: 'Indie Flower';
@@ -6,6 +6,29 @@ body {
 
 .content {
   font-size: 2em;
+}
+
+.rounded-image {
+  border-radius: 15px;
+}
+
+.detail-box {
+  border: .5em solid black;
+  margin-bottom: .5em;
+  padding: .5em;
+}
+
+.detail-box h2, .content-bold {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.detail-box h2 {
+  text-decoration: underline;
+}
+
+.content-bold {
+  font-size: 1.5em;
 }
 
 .box-link:visited, .box-link {
@@ -16,9 +39,9 @@ body {
 #toplink {
   position: relative;
   top: 10px;
-  left: 39px;
-  width: 200px;
-  height: 80px;
+  left: 10px;
+  width: 925px;
+  height: 300px;
   z-index: 100;
   opacity: .2;
 }
@@ -55,7 +78,7 @@ h3 {
 }
 
 .top h1 {
-  margin-top: 4em;
+  margin-top: 1em;
   font-size: 2em;
   margin-right: 1.5em;
   text-align: right;
@@ -77,6 +100,9 @@ h3 {
   min-height: 50px;
 }
 
+.centered {
+  text-align: center;
+}
 
 .event-box {
   min-height: 220px;
@@ -115,6 +141,16 @@ footer {
     font-size: 1em;
   }
 
+  #toplink {
+    position: relative;
+    top: 10px;
+    left: 39px;
+    width: 200px;
+    height: 80px;
+    z-index: 100;
+    opacity: .2;
+  }
+
   #logo {
     float: left;
     background: url('image/FE_Very_Small_Logo_200.png');
@@ -123,6 +159,30 @@ footer {
     height: 80px;
     margin-top: 1em;
     margin-left: 2.8em;
+  }
+
+  .detail-table {
+    display: table;
+  }
+
+  .detail-row {
+    display: table-row;
+  }
+
+  .detail-box {
+    border: .75em solid black;
+    padding: .5em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    min-width: 452px;
+  }
+
+  .detail-cell {
+    float: left;
+  }
+
+  .detail-full-width {
+    width: 952px;
   }
 
   .cell-33 {
@@ -144,7 +204,7 @@ footer {
     margin-bottom: 1em;
   }
 
-  .content-centered, .event-box {
+  .content-centered, .event-box, .detail-box {
     border-radius: 15px;
   }
 
@@ -204,6 +264,7 @@ footer {
   .middle {
     flex-grow: 1;
   }
+
   .last {
     margin-right: 0;
   }

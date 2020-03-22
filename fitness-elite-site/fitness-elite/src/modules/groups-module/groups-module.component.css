@@ -1,3 +1,93 @@
 .top h1 {
   font-size: 1.9em;
 }
+
+#fet-content, #demo-content, #karate-content {
+  font-family: 'Bowlby One SC';
+}
+
+#fet-header-image {
+  max-width: 926px;
+}
+
+#detail-fet-pricing ul {
+  list-style-type: none;
+  font-weight: bold;
+  padding-inline-start: 0em;
+}
+
+#detail-fet-pricing .pricing {
+  font-size: 1.6em;
+}
+
+#detail-fet-pricing .pricing-fine {
+  text-indent: 1em;
+}
+
+
+#fet-content .lighter, #fet-content .pricing-fine, #demo-content .lighter, #karate-content .lighter {
+  font-family: 'Francois One';
+}
+
+#fet-instructors .centered {
+  margin: 0 auto;
+}
+
+#fet-instructors .centered {
+  margin-bottom: 1em;
+}
+
+#fet-classes > div {
+  margin-bottom: 1em;
+}
+
+#fet-classes .lighter {
+  font-size: 1.25em;
+}
+
+#fet-contact {
+  margin-top: 1em;
+}
+
+#fet-classes-begin {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#fet-contact > div > div:first-child {
+  margin-right: 1em;
+}
+
+#fet-contact > div {
+  text-align: left;
+  font-size: 1.25em;
+}
+
+#fet-instructors .centered div {
+  display: inline-flex;
+  text-align: left;
+  width: 40%;
+}
+
+#fet-instructors .centered .clear {
+  clear: left;
+}
+
+.unindent {
+  margin-left: -9em;
+}
+
+@media only screen and (min-width: 768px) {
+
+  #fet-header-image {
+    max-width: none;
+  }
+
+  #fet-contact > div {
+    width: 33%;
+    display: inline-flex;
+    text-align: left;
+    font-size: 1.25em;
+  }
+
+}
