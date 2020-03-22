@@ -68,8 +68,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "deployUrl": "docs/",
-              "baseHref": "/docs",
+              "deployUrl": "/docs/",
+              "baseHref": "/docs/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
