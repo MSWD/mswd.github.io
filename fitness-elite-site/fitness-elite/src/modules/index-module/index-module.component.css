@@ -1,0 +1,16 @@
+.groups-content > img {
+  width: 925px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .groups-box {
+    display: block;
+  }
+
+  .groups-content > img {
+    width: 478px;
+  }
+
+
+}
