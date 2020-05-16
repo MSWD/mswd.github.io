@@ -90,4 +90,16 @@
     font-size: 1.25em;
   }
 
+  .cell {
+    width: 95%;
+    min-width: 1000px;
+  }
+
+  .event-box-row {
+    column-count: 1;
+    column-gap: 0;
+    flex: 1
+  }
+
+
 }
