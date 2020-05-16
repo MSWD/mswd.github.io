@@ -112,13 +112,14 @@ h3 {
 
 .event-box-table {
   width: 100%;
+  display: flex;
   margin: 0 auto;
   display: table;
 }
 
-.event-box-row {
+/* .event-box-row {
   overflow: auto;
-}
+} */
 
 .bottom {
   min-height: 2em;
@@ -185,17 +186,9 @@ footer {
     width: 952px;
   }
 
-  .cell-33 {
-    width: 308px;
-  }
-
-  .cell-50 {
-    width: 479px;
-  }
-
-  .cell-100 {
-    width: 1000px;
-    margin-right: 0em;
+  .cell {
+    width: 95%;
+    min-width: 480px;
   }
 
   .content-centered {
@@ -257,8 +250,12 @@ footer {
   }
 
   .event-box {
-    float: left;
-    margin-right: 1em;
+    -webkit-column-break-inside: avoid;
+    /* Chrome, Safari, Opera */
+    page-break-inside: avoid;
+    /* Firefox */
+    break-inside: avoid;
+    /* IE 10+ */
   }
 
   .middle {
@@ -271,6 +268,12 @@ footer {
 
   .clear {
     clear: both;
+  }
+
+  .event-box-row {
+    column-count: 2;
+    column-gap: 1%;
+    flex: 1
   }
 
   .event-box-row::after {
